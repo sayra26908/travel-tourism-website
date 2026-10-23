@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tour - Pakistan Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">PAKISTAN<span>TOURS</span></div>
+
+        <!-- Hidden checkbox and hamburger label for mobile menu toggle -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!-- Hidden checkbox for Dark Mode (Checkbox Hack) -->
+    <input type="checkbox" id="dark-mode-toggle" style="display: none;">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Moon / Sun Toggle Button -->
+    <label for="dark-mode-toggle" class="theme-switch-btn" title="Toggle Dark/Light Mode">
+        🌙
+    </label>
+    </header>
+
+    <!-- Page Banner Section -->
+    <section class="page-header destination-banner">
+        <div class="page-header-content">
+            <h1>Book Your <span class="highlight">Dream Tour</span></h1>
+            <p>Fill out the form below to reserve your spot for an unforgettable adventure.</p>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <div class="booking-form-box">
+                <h2>Reservation Form</h2>
+                <p>Provide your details and preferences to get started.</p>
+
+                <form class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder="Enter your phone number" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Select Destination</label>
+                            <select required>
+                                <option value="">Choose a destination</option>
+                                <option>Naran Kaghan & Saif-ul-Malook</option>
+                                <option>Hunza Valley Majesty</option>
+                                <option>Shangrila & Skardu Lakes</option>
+                                <option>Historic Lahore Fort</option>
+                                <option>Gwadar Coastal Paradise</option>
+                                <option>Pine City Abbottabad</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Tour Package</label>
+                            <select required>
+                                <option value="">Choose a package</option>
+                                <option>Budget Tour ($299)</option>
+                                <option>Family Special ($599)</option>
+                                <option>Luxury VIP ($999)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Travel Date</label>
+                            <input type="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Number of Persons</label>
+                            <input type="number" min="1" max="20" placeholder="e.g. 2" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests / Notes</label>
+                            <input type="text" placeholder="Any special requirements?">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn submit-btn">Confirm Booking</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="faq-section">
+        <div class="section-title-box" style="text-align: center;">
+            <h2>Frequently Asked <span>Questions</span></h2>
+            <p>Got questions about your trip? Find quick answers below.</p>
+        </div>
+
+        <div class="faq-container">
+            
+            <details class="faq-item">
+                <summary class="faq-question">How can I confirm my tour booking?</summary>
+                <div class="faq-answer">
+                    <p>You can easily confirm your booking by filling out our reservation form on this page with your selected destination and package details, or by contacting our team directly via WhatsApp.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">What is the payment and advance policy?</summary>
+                <div class="faq-answer">
+                    <p>We require a 30% advance payment to confirm your hotel bookings and transport arrangements. The remaining balance can be paid upon arrival at the start of your tour.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">Can I customize my tour package?</summary>
+                <div class="faq-answer">
+                    <p>Yes, absolutely! We offer fully customizable tour plans. You can mention your special requirements in the booking form or chat with our experts on WhatsApp to tailor the itinerary to your needs.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">What is the cancellation and refund policy?</summary>
+                <div class="faq-answer">
+                    <p>Cancellations made at least 7 days prior to the trip departure date are eligible for a full refund of the advance payment. Late cancellations may incur a nominal processing fee.</p>
+                </div>
+            </details>
+
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Support Button -->
+    <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Pakistan Tours. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>

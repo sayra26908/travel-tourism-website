@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations - Pakistan Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">PAKISTAN<span>TOURS</span></div>
+
+        <!-- Hidden checkbox and hamburger label for mobile menu toggle -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!-- Hidden checkbox for Dark Mode (Checkbox Hack) -->
+    <input type="checkbox" id="dark-mode-toggle" style="display: none;">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destination.html" class="active">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Moon / Sun Toggle Button -->
+    <label for="dark-mode-toggle" class="theme-switch-btn" title="Toggle Dark/Light Mode">
+        🌙
+    </label>
+    </header>
+
+    <!-- Page Banner Section -->
+    <section class="page-header destination-banner">
+        <div class="page-header-content">
+            <h1>Explore <span class="highlight">Destinations</span></h1>
+            <p>Discover breathtaking places around Pakistan and plan your next dream vacation.</p>
+        </div>
+    </section>
+
+    <!-- Destinations Section with Pure CSS Filtering -->
+    <section class="destinations-section">
+        
+        <!-- Search Bar -->
+        <div class="search-filter-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search destination, city, or valley...">
+                <button class="btn primary-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Pure CSS Category Filter Radio Hack -->
+        <input type="radio" name="dest-filter" id="filter-all" class="filter-radio" checked>
+        <input type="radio" name="dest-filter" id="filter-beach" class="filter-radio">
+        <input type="radio" name="dest-filter" id="filter-mountain" class="filter-radio">
+        <input type="radio" name="dest-filter" id="filter-history" class="filter-radio">
+
+        <!-- Filter Labels/Buttons -->
+        <div class="filter-buttons">
+            <label for="filter-all" class="filter-btn">All Places</label>
+            <label for="filter-beach" class="filter-btn">Beaches</label>
+            <label for="filter-mountain" class="filter-btn">Mountains</label>
+            <label for="filter-history" class="filter-btn">Historical</label>
+        </div>
+
+        <!-- Destination Cards Grid (8 Featured Places) -->
+        <div class="destination-grid">
+            
+            <!-- Card 1: Mountain (Naran Kaghan) -->
+            <div class="destination-card category-mountain">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Naran Kaghan Valley">
+                    <span class="badge">Popular</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Naran Kaghan, KPK</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>Naran & Saif-ul-Malook</h3>
+                    <p>Enchanting alpine lakes, lush green meadows, Babusar Top, and serene river rafting valleys.</p>
+                    <div class="card-footer">
+                        <div class="price">$580 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Mountain (Hunza) -->
+            <div class="destination-card category-mountain">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=600&q=80" alt="Hunza Valley">
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Hunza, Gilgit-Baltistan</span>
+                        <span class="rating">★ 4.8</span>
+                    </div>
+                    <h3>Hunza Valley Majesty</h3>
+                    <p>Explore majestic Karakoram mountains, ancient forts, and serene blue Attabad Lake.</p>
+                    <div class="card-footer">
+                        <div class="price">$650 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: Mountain (Abbottabad) -->
+            <div class="destination-card category-mountain">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=600&q=80" alt="Abbottabad Pine Hills">
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Abbottabad, KPK</span>
+                        <span class="rating">★ 4.6</span>
+                    </div>
+                    <h3>Pine City Abbottabad</h3>
+                    <p>Scenic pine hills, pleasant climate, Shimla Peak, and gateway to Galyat tourist spots.</p>
+                    <div class="card-footer">
+                        <div class="price">$420 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Historical / Heritage (Mansehra) -->
+            <div class="destination-card category-history">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=80" alt="Mansehra Heritage">
+                    <span class="badge">Featured</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Mansehra, KPK</span>
+                        <span class="rating">★ 4.5</span>
+                    </div>
+                    <h3>Historic Mansehra Rocks</h3>
+                    <p>Ancient Ashoka rock edicts, rich historical culture, and lush green tea gardens.</p>
+                    <div class="card-footer">
+                        <div class="price">$380 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Beach (Gwadar) -->
+            <div class="destination-card category-beach">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Gwadar Beach">
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Gwadar, Balochistan</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>Gwadar Coastal Paradise</h3>
+                    <p>Crystal clear waters, pristine golden beaches, and stunning sunset views along the Arabian Sea.</p>
+                    <div class="card-footer">
+                        <div class="price">$1,200 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Mountain (Skardu) -->
+            <div class="destination-card category-mountain">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80" alt="Skardu Valley">
+                    <span class="badge">Trending</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Skardu, Gilgit-Baltistan</span>
+                        <span class="rating">★ 4.9</span>
+                    </div>
+                    <h3>Shangrila & Skardu Lakes</h3>
+                    <p>Experience cold deserts, breathtaking alpine lakes, and dramatic mountain wilderness.</p>
+                    <div class="card-footer">
+                        <div class="price">$750 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7: Historical (Lahore Fort) -->
+            <div class="destination-card category-history">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80" alt="Lahore Heritage">
+                    <span class="badge">Popular</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Lahore, Punjab</span>
+                        <span class="rating">★ 4.7</span>
+                    </div>
+                    <h3>Historic Lahore Fort</h3>
+                    <p>Step back in time through Mughal architecture, iconic Badshahi Mosque, and rich heritage.</p>
+                    <div class="card-footer">
+                        <div class="price">$480 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8: Beach (Ormara Beach) -->
+            <div class="destination-card category-beach">
+                <div class="card-image">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" alt="Ormara Beach">
+                    <span class="badge">Featured</span>
+                </div>
+                <div class="card-details">
+                    <div class="card-meta">
+                        <span class="location">📍 Ormara, Balochistan</span>
+                        <span class="rating">★ 4.6</span>
+                    </div>
+                    <h3>Ormara Turquoise Beach</h3>
+                    <p>Relax beside scenic coastal highways, serene blue waters, and natural rock formations.</p>
+                    <div class="card-footer">
+                        <div class="price">$550 <span>/ person</span></div>
+                        <a href="#hunza-modal" class="btn primary-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Pure CSS Modal Box -->
+    <div id="hunza-modal" class="modal-overlay">
+        <div class="modal-box">
+            <h2>Destination Details</h2>
+            <p class="modal-subtitle">Pakistan Tours Exclusive</p>
+            <div class="modal-body">
+                <p><strong>Duration:</strong> 5 Days / 4 Nights</p>
+                <p><strong>Highlights:</strong> Scenic Views, Historic Locations, Lakes & Cultural Experiences.</p>
+                <p><strong>Included:</strong> Transport, 3-Star Hotel Stay, Breakfast & Dinner, Tour Guide.</p>
+            </div>
+            <div class="modal-actions">
+                <a href="booking.html" class="btn primary-btn">Book This Tour</a>
+                <a href="#" class="btn secondary-btn modal-close">Close</a>
+            </div>
+        </div>
+    </div>
+
+  
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready for an <span>Unforgettable Adventure?</span></h2>
+            <p>Book your tour today and explore the majestic valleys and coastal paradises of Pakistan with expert guides.</p>
+            <a href="booking.html" class="btn primary-btn">Book Your Trip Now</a>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+    
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Pakistan Tours. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>

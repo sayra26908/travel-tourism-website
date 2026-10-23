@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Pakistan Tours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar">
+        <div class="logo">PAKISTAN<span>TOURS</span></div>
+
+        <!-- Hidden checkbox and hamburger label for mobile menu toggle -->
+        <input type="checkbox" id="menu-btn" class="menu-btn">
+        <label for="menu-btn" class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <!-- Hidden checkbox for Dark Mode (Checkbox Hack) -->
+    <input type="checkbox" id="dark-mode-toggle" style="display: none;">
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Moon / Sun Toggle Button -->
+    <label for="dark-mode-toggle" class="theme-switch-btn" title="Toggle Dark/Light Mode">
+        🌙
+    </label>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <p class="hero-subtitle">DISCOVER THE BEAUTY OF PAKISTAN</p>
+            <h1>EXPLORE <span class="highlight">PAKISTAN</span></h1>
+            <p>Discover breathtaking valleys, majestic mountains of Hunza, Skardu, Swat, and create unforgettable memories.</p>
+            <div class="btn-group">
+                <a href="destination.html" class="btn primary-btn">Explore Destinations</a>
+                <a href="contact.html" class="btn secondary-btn">Book Your Trip</a>
+            </div>
+        </div>
+
+        <!-- Quick Search / Booking Widget Bar -->
+        <div class="booking-widget">
+            <div class="widget-field">
+                <label>DESTINATION</label>
+                <select>
+                    <option>Select City / Valley</option>
+                    <option>Hunza Valley</option>
+                    <option>Skardu</option>
+                    <option>Swat Valley</option>
+                </select>
+            </div>
+            <div class="widget-field">
+                <label>DURATION</label>
+                <select>
+                    <option>3 to 5 Days</option>
+                    <option>5 to 7 Days</option>
+                    <option>7+ Days</option>
+                </select>
+            </div>
+            <div class="widget-field">
+                <label>BUDGET</label>
+                <select>
+                    <option>Economy</option>
+                    <option>Standard</option>
+                    <option>Luxury</option>
+                </select>
+            </div>
+            <button class="widget-btn">Find Tours</button>
+        </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="cta-banner">
+        <div class="cta-content">
+            <h2>Ready for an <span>Unforgettable Adventure?</span></h2>
+            <p>Book your tour today and explore the majestic valleys and coastal paradises of Pakistan with expert guides.</p>
+            <a href="booking.html" class="btn primary-btn">Book Your Trip Now</a>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="section-title-box">
+            <h2>What Our <span>Travelers Say</span></h2>
+            <p>Read real stories and experiences from travelers who explored Pakistan with us.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            
+            <!-- Review Card 1 -->
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The Hunza and Saif-ul-Malook trip was amazingly well-organized! The luxury transport and hotel arrangements were top-notch. Highly recommended for family vacations!"</p>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h4>Sarah Khan</h4>
+                        <p>Traveled to Hunza Valley</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"One of the best family travel experiences we have ever had! The tour guide was exceptionally polite and ensured we visited all major spots comfortably."</p>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h4>Ali Raza</h4>
+                        <p>Traveled to Skardu & Naran</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="testimonial-card">
+                <div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Our Gwadar coastal tour was smooth and completely hassle-free. The booking process was very simple and the customer support team was available 24/7."</p>
+                </div>
+                <div class="user-profile">
+                    <div class="user-info">
+                        <h4>Ayesha Malik</h4>
+                        <p>Traveled to Gwadar Beach</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+   
+
+    <!-- Floating WhatsApp Button (Can be placed right before closing body tag on all pages) -->
+    <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" title="Chat with us on WhatsApp">
+        💬
+    </a>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Pakistan Tours. All Rights Reserved.</p>
+        <div class="footer-socials">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
